@@ -38,14 +38,3 @@ def json_to_csv(json_file, selected_keys):
 # Example usage
 json_to_csv('filename.json', ['key1', 'key2', 'key3'])
     
-# Function to convert CSV to JSON
-def csv_to_json(csv_file, json_file):
-    with open(csv_file, 'r') as file:
-        data = csv.DictReader(file)
-        file.close()
-    with open(json_file, 'w') as file:
-        json_file = json.dumps(list(data), indent=4)
-        file.write(json_file)
-        file.close()
-        return json_file
-    
