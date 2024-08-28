@@ -2,10 +2,12 @@ import json
 import csv
 import os
 
-# Function to convert JSON to CSV with optional selected keys
+# Function to convert JSON Lines to CSV with optional selected keys
 def json_to_csv(json_file, selected_keys=None):
+    data = []
     with open(json_file, 'r') as file:
-        data = json.load(file)
+        for line in file:
+            data.append(json.loads(line))
     
     # If selected_keys is not provided, use keys from the first JSON object
     if not selected_keys:
@@ -34,7 +36,7 @@ def json_to_csv(json_file, selected_keys=None):
             csv_writer.writerow([row.get(key, '') for key in selected_keys])
 
 # Example usage
-json_to_csv('filename.json')
+json_to_csv('../toBeConverted/models.jsonl')
 # json_to_csv('filename.json', ['key1', 'key2', 'key3'])
 
     
