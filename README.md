@@ -30,19 +30,21 @@ To convert a JSON Lines file to CSV and include specific keys as columns:
 json_to_csv('./toBeConverted/utterances.jsonl', ['model_name', 'model_provider', 'model_reponse', 'user_prompt', 'if_chosen', 'score', 'conversation_type', 'user_id'])
 ```
 ## Directory
+```
 .
 ├── jsonCsv.py
 ├── converted_files
 │   └── (CSV files will be saved here)
 └── toBeConverted
     └── (Place your JSON Lines files here)
+```
 
 ## Notes
  - Ensure that the `converted_files` directory exists or will be created by the script.
  - The script handles duplicate filenames by appending a number to the filename to make it unique.
 
 ## Author 
-This repository is mainatined byL
+This repository is mainatined by:
 
 - [Kimathi Njoki](https://github.com/kimathinjoki)
 
