@@ -27,7 +27,7 @@ To print all unique keys from a JSON Lines file, use the `print_json_keys` funct
 To convert a JSON Lines file to CSV and include specific keys as columns:
 
 ```python
-json_to_csv('./toBeConverted/utterances.jsonl', ['model_name', 'model_provider', 'model_reponse', 'user_prompt', 'if_chosen', 'score', 'conversation_type', 'user_id'])
+json_to_csv('./toBeConverted/file.jsonl', ['key_1', 'key2', 'Key3', 'key4'])
 ```
 ## Directory
 ```
