@@ -29,6 +29,12 @@ To convert a JSON Lines file to CSV and include specific keys as columns:
 ```python
 json_to_csv('./toBeConverted/file.jsonl', ['key_1', 'key2', 'Key3', 'key4'])
 ```
+
+To print all unique keys from a JSON Lines file:
+
+```python
+print_json_keys('../toBeConverted/example.jsonl')
+```
 ## Directory
 ```
 .
