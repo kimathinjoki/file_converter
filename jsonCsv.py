@@ -48,11 +48,11 @@ def json_to_csv(json_file, selected_keys=None):
             csv_writer.writerow([row.get(key, '') for key in selected_keys])
 
 
-# json_to_csv('../toBeConverted/models.jsonl')
+# json_to_csv('./toBeConverted/models.jsonl')
 
 
-# print_json_keys('../toBeConverted/utterances.jsonl')
+# print_json_keys('./toBeConverted/utterances.jsonl')
 
-json_to_csv('../toBeConverted/utterances.jsonl', ['model_name', 'model_provider', 'model_reponse', 'user_prompt', 'if_chosen', 'score', 'conversation_type', 'user_id'])
+json_to_csv('../toBeConverted/utterances.jsonl', ['model_name', 'model_provider', 'model_response', 'user_prompt', 'if_chosen', 'score', 'conversation_type', 'user_id'])
 
     
